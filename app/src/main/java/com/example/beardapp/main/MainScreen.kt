@@ -9,6 +9,7 @@ import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.beardapp.banner.Banner
 import com.example.beardapp.barber.BarberItem
 import com.example.beardapp.bottombar.BottomBar
 import com.example.beardapp.header.Header
@@ -31,6 +32,15 @@ fun MainScreen() {
                 modifier = Modifier.padding(padding),
                 columns = GridCells.Fixed(2)
             ) {
+                item(
+                    span = {
+                        // Replace "maxCurrentLineSpan" with the number of spans this item should take.
+                        // Use "maxCurrentLineSpan" if you want to take full width.
+                        GridItemSpan(maxCurrentLineSpan)
+                    }
+                ) {
+                    Banner()
+                }
                 item(
                     span = {
                         // Replace "maxCurrentLineSpan" with the number of spans this item should take.

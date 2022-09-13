@@ -18,7 +18,7 @@ import com.example.beardapp.model.getBarberItems
 
 @Composable
 fun BarberItem(items: List<Int>) {
-    LazyRow {
+    LazyRow(modifier = Modifier.fillMaxWidth()) {
         items(count = items.size, itemContent = { index ->
             Image(
                 painter = painterResource(id = items[index]),

@@ -23,13 +23,6 @@ fun BottomBar(bottomBarNavItems: List<NavigationItem>) {
             BottomNavigationItem(
                 icon = {
                     Icon(painter = painterResource(id = item.icon), contentDescription = item.iconTitle, tint = Color.White.copy(0.5f))
-//                    IconButton(onClick = {  },
-//                        modifier = Modifier
-//                            .then(Modifier.size(50.dp))
-//                            .border(1.dp, Color.Black, shape = CircleShape)
-//                    ) {
-//                        Icon(painter = painterResource(id = item.icon), contentDescription = item.iconTitle, tint = Color.White.copy(0.5f))
-//                    }
                 },
                 selected = false,
                 selectedContentColor = Color.White,
