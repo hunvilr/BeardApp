@@ -2,7 +2,7 @@ package com.example.beardapp.model
 
 import com.example.beardapp.R
 
-fun getGridItems(): List<Service> {
+fun getServiceItems(): List<Service> {
     return listOf(
         Service(R.drawable.ic_baseline_person_24, "Classic shaving"),
         Service(R.drawable.ic_baseline_person_24, "Hair care"),

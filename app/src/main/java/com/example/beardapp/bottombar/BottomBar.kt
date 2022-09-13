@@ -1,13 +1,15 @@
 package com.example.beardapp.bottombar
 
-import androidx.compose.material.BottomNavigation
-import androidx.compose.material.BottomNavigationItem
-import androidx.compose.material.Icon
-import androidx.compose.material.Text
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.beardapp.model.NavigationItem
 import com.example.beardapp.model.getBottomBarNavItems
 
@@ -19,7 +21,16 @@ fun BottomBar(bottomBarNavItems: List<NavigationItem>) {
     ) {
         bottomBarNavItems.forEach { item ->
             BottomNavigationItem(
-                icon = { Icon(painter = painterResource(id = item.icon), contentDescription = item.iconTitle, tint = Color.White.copy(0.5f)) },
+                icon = {
+                    Icon(painter = painterResource(id = item.icon), contentDescription = item.iconTitle, tint = Color.White.copy(0.5f))
+//                    IconButton(onClick = {  },
+//                        modifier = Modifier
+//                            .then(Modifier.size(50.dp))
+//                            .border(1.dp, Color.Black, shape = CircleShape)
+//                    ) {
+//                        Icon(painter = painterResource(id = item.icon), contentDescription = item.iconTitle, tint = Color.White.copy(0.5f))
+//                    }
+                },
                 selected = false,
                 selectedContentColor = Color.White,
                 unselectedContentColor = Color.Black.copy(0.4f),
