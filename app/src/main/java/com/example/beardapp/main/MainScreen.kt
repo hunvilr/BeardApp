@@ -9,6 +9,7 @@ import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.beardapp.banner.Banner
 import com.example.beardapp.barber.BarberItem
 import com.example.beardapp.bottombar.BottomBar
@@ -29,7 +30,9 @@ fun MainScreen() {
             // If the number of items increases, you will not be able to scroll to the
             // last item otherwise
             LazyVerticalGrid(
-                modifier = Modifier.padding(padding),
+                modifier = Modifier
+                    .padding(padding)
+                    .padding(10.dp),
                 columns = GridCells.Fixed(2)
             ) {
                 item(
