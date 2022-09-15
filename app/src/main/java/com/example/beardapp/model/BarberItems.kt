@@ -7,6 +7,10 @@ fun getBarberItems(): List<Int> {
         R.drawable.emilia,
         R.drawable.sophie,
         R.drawable.kit,
+        R.drawable.maisie,
+        R.drawable.emilia,
+        R.drawable.sophie,
+        R.drawable.kit,
         R.drawable.maisie
     )
 }
